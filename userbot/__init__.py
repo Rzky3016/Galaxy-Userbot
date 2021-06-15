@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Rzky3016/Paradise-Userbot.git")
+    "https://github.com/Rzky3016/Galaxy-Userbot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Linux-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Galaxy-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -148,7 +148,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # untuk perintah .linux
-PARADISE_TEKS_KUSTOM = os.environ.get("PARADISE_TEKS_KUSTOM", None)
+PARADISE_TEKS_KUSTOM = os.environ.get("GALAXY_TEKS_KUSTOM", None)
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -167,7 +167,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Paradise-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Galaxy-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "4.0")
@@ -180,7 +180,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/8f6dc8c4536b52ca3271c.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/492f442c7ea7134042a62.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🗿Paradise-Userbot🗿 Telah Aktif, Enjoyed The Bot:)```")
+    await bot.send_message(BOTLOG_CHATID, "**🛸GALAXY-USERBOT🛸 Telah Aktif, HAVE FUN!!!**")
     return
 
 with bot:
@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} 🗿 ".format("🗿", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 🛸 ".format("🛸", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -365,10 +365,10 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "☜", data="{}_prev({})".format(prefix, modulo_page)
+                    "≫", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "☞", data="{}_next({})".format(prefix, modulo_page)
+                    "≪", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -390,9 +390,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("🗿Paradise-Userbot🗿,Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/Rzky3016/Paradise-Userbot.git)")
+                await event.reply("🛸Galaxy-Userbot🛸 Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/Rzky3016/Galaxy-Userbot.git)")
             else:
-                await event.reply(f"`Hai Tuan {ALIVE_NAME}\n\nApa Kabarmu? Aku Siap Membantu ^_^`")
+                await event.reply(f"`Hai Ngab {ALIVE_NAME}\n\nApa Kabarmu? Aku Siap Membantu ^_^`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -404,7 +404,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\n\n**☯ Jumlah Modul Yang Tersedia:** `{}`\n               \n**☯ Daftar Modul Saya Userbot:** \n".format(
-                        "**🗿Paradise-Userbot**🗿",
+                        "**🛸Galaxy-Userbot🛸**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -412,20 +412,20 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Paradise✰Userbot ",
+                    "Bantuan Galaxy✰Userbot ",
                     text="Daftar Modul",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
 
-                    "**🗿Paradise-Userbot🗿**",
-                    text="""**Anda Bisa Membuat Paradise Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/Nopegoodloking)""",
+                    "**🛸Galaxy-Userbot🛸**",
+                    text="""**Anda Bisa Membuat Galaxy Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/Nopegoodloking)""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "🗿Repo🗿",
-                                "https://github.com/Rzky3016/Paradise-Userbot"),
+                                "🛸Repo🛸",
+                                "https://github.com/Rzky3016/Galaxy-Userbot"),
                             custom.Button.url(
                                 "Pemilik",
                                 "t.me/Nopegoodloking")],
@@ -448,7 +448,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Eror 404 not found Saya Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found Buat Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -466,7 +466,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Eror 404 not found Paradise Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found Buat Galaxy Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -497,7 +497,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Eror 404 not found Saya Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found Buat Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
