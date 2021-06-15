@@ -1,12 +1,12 @@
-# Paradise Userbot
-![Paradise-Userbot Logo](https://telegra.ph/file/8f6dc8c4536b52ca3271c.jpg)
+# Galaxy Userbot
+![Paradise-Userbot Logo](https://telegra.ph/file/492f442c7ea7134042a62.jpg)
 
 
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
-### Repo Paradise Userbot
+### Repo Galaxy Userbot
 Repo Yang Dibuat [Rizky](https://t.me/Nopegoodloking) Dari Berbagai Repo Userbot Github 
 String_Session [Tekan](https://replit.com/@Rzky3016/String-Sesson-Paradise)
 
@@ -26,13 +26,13 @@ String_Session [Tekan](https://replit.com/@Rzky3016/String-Sesson-Paradise)
 
 ## Group Support 🛠
 
-   <a href="https://t.me/paradiseuserbot"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/galaxyubot"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
 
 
 ## <p align="center">DEPLOY Paradise-Userbot</p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rzky3016/Paradise-Userbot/tree/Paradise-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-yellow?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rzky3016/Galaxy-Userbot/tree/Galaxy-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-yellow?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
