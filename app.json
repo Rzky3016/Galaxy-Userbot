@@ -1,7 +1,7 @@
 {
-  "name": "Paradise-Userbot",
-  "description": "[Paradise-Userbot] USERBOT TELEGRAM.",
-  "logo": "https://telegra.ph/file/8f6dc8c4536b52ca3271c.jpg",
+  "name": "Galaxy-Userbot",
+  "description": "[Galaxy-Userbot] USERBOT TELEGRAM.",
+  "logo": "https://telegra.ph/file/492f442c7ea7134042a62.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Rzky3016/Paradise-Userbot",
+  "repository": "https://github.com/Rzky3016/Galaxy-Userbot",
   "telegram": "https://t.me/Nopegoodloking",
   "success_url": "https://t.me/Nopegoodloking",
   "stack": "container",
@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya @Nopegoodloking di telegram",
+      "description": "Dapatkan String Session, caranya ada di repo, jika tidak tau reponya tanya @Nopegoodloking di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -162,8 +162,8 @@
       "description": "Nama untuk menunjukan pesan .alive",
       "required": false
     },
-    "PARADISE_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .paradise (Isi Terserah)",
+    "GALAXY_TEKS_KUSTOM": {
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .galaxy (Isi Terserah)",
       "required": false
     },
     "S_PACK_NAME": {
