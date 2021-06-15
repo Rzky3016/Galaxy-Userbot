@@ -25,7 +25,7 @@ async def typewriter(typew):
                      "`\n┻┳|￣  )`"
                      "`\n┳ﾐ(￣ ／`"
                      "`\n┻┳T￣|`"
-                     "\n**Punten**")
+                     "\n**Punten Om / Tante Numpang Lewat...**")
 
 
 @register(outgoing=True, pattern='^.pantau(?: |$)(.*)')
@@ -44,11 +44,11 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 CMD_HELP.update({
-    "Paradise":
-    "🗿CMD🗿`.paradise`\
+    "Galaxy":
+    "🛸CMD🛸`.galaxy`\
     \nUsage: alive bot.\
-    \n\n🗿CMD🗿`.sadboy`\
+    \n\n🛸CMD🛸`.sadboy`\
     \nUsage: hiks\
-    \n\n🗿CMD🗿`.punten` ; 🗿CMD🗿`.pantau`\
+    \n\n🛸CMD🛸`.punten` ; 🛸CMD🛸`.pantau`\
     \nUsage: coba aja."
 })
